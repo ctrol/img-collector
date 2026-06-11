@@ -157,6 +157,8 @@ GPL v2 或更高版本
 ## 作者
 
 老九 ([@laojiu](https://github.com/ctrol/img-collector))
+欢迎加入QQ群，贡献Idea
+<img width="1284" height="2283" alt="68ca69a5754855799261787fa16cd71" src="https://github.com/user-attachments/assets/9f28d20d-37b0-427a-8185-2b2b2d85b718" />
 
 ## 贡献
 
