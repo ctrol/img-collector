@@ -158,11 +158,6 @@ GPL v2 或更高版本
 
 老九 ([@laojiu](https://github.com/ctrol/img-collector))
 
-欢迎加入QQ群，贡献Idea
-
-<img width="300" height="500" align="left" alt="68ca69a5754855799261787fa16cd71" src="https://github.com/user-attachments/assets/9f28d20d-37b0-427a-8185-2b2b2d85b718" />
-
-
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request！
@@ -170,3 +165,6 @@ GPL v2 或更高版本
 ---
 
 **远程图片采集器** - 让您的 WordPress 图片本地化更简单！
+欢迎加入QQ群，贡献Idea
+
+<img width="300" height="500" align="left" alt="68ca69a5754855799261787fa16cd71" src="https://github.com/user-attachments/assets/9f28d20d-37b0-427a-8185-2b2b2d85b718" />
