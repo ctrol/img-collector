@@ -1,0 +1,263 @@
+/**
+ * 远程图片采集器 - 管理后台样式
+ *
+ * @package Img_Collector
+ * @author 老九
+ * @version 1.7.0
+ */
+
+/* 模态窗口样式 */
+.img-collector-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-collector-modal .modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 0;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.img-collector-modal .modal-header {
+    padding: 15px 20px;
+    background: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-collector-modal .modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.img-collector-modal .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.img-collector-modal .close-btn:hover {
+    color: #333;
+}
+
+.img-collector-modal .modal-body {
+    padding: 20px;
+}
+
+.img-collector-modal .modal-footer {
+    padding: 15px 20px;
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+/* 采集按钮样式 */
+.img-collector-btn {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.img-collector-btn .dashicons {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* 采集选项样式 */
+.collect-options {
+    margin-bottom: 20px;
+}
+
+.collect-options label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.collect-options select {
+    width: 100%;
+    padding: 8px;
+}
+
+/* 进度条样式 */
+.collect-progress {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #2271b1, #135e96);
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* 结果列表样式 */
+.collect-results {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.collect-results .result-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.collect-results .result-item:last-child {
+    border-bottom: none;
+}
+
+.collect-results .result-item.success {
+    background: #d4edda;
+}
+
+.collect-results .result-item.failed {
+    background: #f8d7da;
+}
+
+.collect-results .result-item .dashicons {
+    margin-right: 10px;
+}
+
+.collect-results .result-item.success .dashicons {
+    color: #28a745;
+}
+
+.collect-results .result-item.failed .dashicons {
+    color: #dc3545;
+}
+
+/* 扫描页面样式 */
+.img-collector-scan .scan-form {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.img-collector-scan .scan-results {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.img-collector-scan .scan-stats {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.img-collector-scan .scan-progress {
+    margin-bottom: 20px;
+}
+
+.img-collector-scan #results-table {
+    width: 100%;
+}
+
+.img-collector-scan #results-table th,
+.img-collector-scan #results-table td {
+    padding: 10px;
+}
+
+/* 设置页面样式 */
+.img-collector-settings .img-collector-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.img-collector-settings .img-collector-info h2 {
+    margin-top: 0;
+}
+
+.img-collector-settings .success {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.img-collector-settings .error {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* 媒体上传按钮 */
+#select_watermark_image {
+    margin-right: 10px;
+}
+
+#watermark_image_preview img {
+    margin-top: 10px;
+}
+
+/* 透明度滑块 */
+input[type="range"] {
+    width: 200px;
+}
+
+#opacity_value {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* 加载动画 */
+.img-collector-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #2271b1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+    .img-collector-modal .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .img-collector-scan .scan-form table.form-table tr th,
+    .img-collector-scan .scan-form table.form-table tr td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
